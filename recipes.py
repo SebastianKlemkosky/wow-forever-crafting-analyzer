@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 
 
+
 class Recipe:
     def __init__(self, data: dict) -> None:
         self.data = data
@@ -17,9 +18,67 @@ class Recipe:
         return self.data["id"]
 
     @property
-    def reagents(self) -> list:
+    def profession(self) -> int:
+        return self.data["profession"]
+
+    @property
+    def category(self) -> int:
+        return self.data["category"]
+
+    @property
+    def reagents(self) -> list[list[int]]:
         return self.data["reagents"]
 
+    @property
+    def product(self) -> dict | None:
+        return self.data.get("product")
+
+    @property
+    def product_id(self) -> int | None:
+        if self.product is None:
+            return None
+
+        return self.product["item"]
+
+    @property
+    def product_count(self) -> int:
+        if self.product is None:
+            return 0
+
+        return self.product["count"]
+
+    @property
+    def skill(self) -> dict:
+        return self.data["skill"]
+
+    @property
+    def required_skill(self) -> int | None:
+        return self.skill.get("learn")
+
+    @property
+    def cast_time(self) -> int:
+        return self.data["castMs"]
+
+    @property
+    def cooldown(self) -> int | None:
+        cooldown = self.data.get("cooldown")
+
+        if cooldown is None:
+            return None
+
+        return cooldown["ms"]
+
+    @property
+    def taught_by(self) -> list[int]:
+        return self.data.get("taughtBy", [])
+
+    @property
+    def icon_url(self) -> str:
+        return self.data["iconUrl"]
+
+    @property
+    def url(self) -> str:
+        return self.data["url"]
 
 
 class RecipeCatalog:
@@ -27,8 +86,6 @@ class RecipeCatalog:
         self.manifest: dict | None = None
         self.data: dict | None = None
         self.recipes: list[Recipe] = []
-
-
 
     def fetch_manifest(self) -> None:
         url: str = f"{RECIPE_BASE_URL}/api/data/v1/manifest"
@@ -160,3 +217,10 @@ class RecipeCatalog:
         self.save_metadata()
 
         print(f"Recipe database updated: {len(self.recipes)} recipes.")
+
+    def get_recipe_by_name(self, name: str) -> Recipe | None:
+        for recipe in self.recipes:
+            if recipe.name.lower() == name.lower():
+                return recipe
+
+        return None
