@@ -1,5 +1,5 @@
 import requests
-from config import BASE_URL, API_TIMEOUT, MARKETS, REGIONS
+from config import AH_BASE_URL, API_TIMEOUT, MARKETS, REGIONS
 
 class Market:
     def __init__(self, region: str, ruleset: str, faction: str,) -> None:
@@ -21,7 +21,7 @@ class Market:
         return f"{self.region.upper()} {self.ruleset.upper()} {self.faction.capitalize()}"
 
     def fetch_data(self) -> None:
-        url: str = f"{BASE_URL}/m/{self.market_key}"
+        url: str = f"{AH_BASE_URL}/m/{self.market_key}"
 
         response = requests.get(url, timeout=API_TIMEOUT)
         response.raise_for_status()

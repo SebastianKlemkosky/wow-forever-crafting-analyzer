@@ -1,6 +1,10 @@
 
-# API Configuration
-BASE_URL = "https://auctionhouse.tk.gg/api"
+# Auction House API
+AH_BASE_URL = "https://auctionhouse.tk.gg/api"
+
+# Warcraft Forever game data
+RECIPE_BASE_URL = "https://warcraftforever.com"
+
 API_TIMEOUT = 30
 
 # Supported Regions
