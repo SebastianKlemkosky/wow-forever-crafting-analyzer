@@ -229,3 +229,23 @@ class RecipeCatalog:
             if recipe.profession == profession:
                 results.append(recipe)
         return results
+    
+    def get_required_item_ids(self) -> set[int]:
+
+        item_ids: set[int] = set()
+
+        for recipe in self.recipes:
+
+            # Crafted product
+            if recipe.product_id is not None:
+                item_ids.add(recipe.product_id)
+
+            # Crafting materials
+            for item_id, quantity in recipe.reagents:
+                item_ids.add(item_id)
+
+            # Recipe teaching items
+            for item_id in recipe.taught_by:
+                item_ids.add(item_id)
+
+        return item_ids

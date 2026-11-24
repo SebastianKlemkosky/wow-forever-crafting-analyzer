@@ -14,6 +14,21 @@ def main() -> None:
 
     print(f"\nTotal recipes available: {len(recipes.recipes)}")
 
+    # Verify manifest is available
+    if recipes.manifest is None:
+        raise ValueError("Manifest has not been loaded.")
+
+    # Collect required item IDs
+    item_ids = recipes.get_required_item_ids()
+
+    print(f"Required unique items: {len(item_ids)}")
+
+    # Load item metadata once
+    items = ItemCatalog()
+    items.update_items(recipes.manifest, item_ids)
+
+    print(f"Item metadata loaded: {len(items.items_by_id)}")
+
     # Iterate through all available markets
     for region in REGIONS:
         for ruleset in MARKETS:
@@ -29,8 +44,7 @@ def main() -> None:
                     if market.data is None:
                         raise ValueError("Market data has not been loaded.")
 
-                    # Build item catalog
-                    items = ItemCatalog()
+                    # Add market items missing from the catalog
                     items.load_market_items(market.data["items"])
 
                     print(f"Items loaded: {len(items.items_by_id)}")
