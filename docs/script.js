@@ -71,7 +71,7 @@ async function loadMarketData() {
     const path = `./markets/${region}/${ruleset}/${faction}.json`;
 
     updateMarketInfo();
-
+    lastUpdated.textContent = "Last Updated: Loading...";
     recipes = [];
     tableBody.replaceChildren();
 
@@ -97,7 +97,8 @@ async function loadMarketData() {
             return;
         }
 
-        recipes = data;
+        recipes = data.recipes;
+        updateTimestamp(data.last_updated);
 
         updateSummary();
 
@@ -121,7 +122,7 @@ async function loadMarketData() {
 
         errorMessage.hidden = false;
         resultsCount.textContent = "Market unavailable.";
-
+        lastUpdated.textContent = "Last Updated: Unavailable";
     } finally {
 
         if (marketRequest === controller) {
@@ -148,6 +149,33 @@ function updateMarketInfo() {
     marketInfo.textContent =
         `${region} | ${ruleset} | ${faction}`;
 }
+
+
+// =========================
+// Market Timestamp
+// =========================
+
+function updateTimestamp(timestamp) {
+
+    if (!timestamp || Number.isNaN(Date.parse(timestamp))) {
+        lastUpdated.textContent = "Last Updated: Unknown";
+        return;
+    }
+
+    const date = new Date(timestamp);
+
+    const formatted = date.toLocaleString(undefined, {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+        hour: "numeric",
+        minute: "2-digit",
+        timeZoneName: "short"
+    });
+
+    lastUpdated.textContent = `Last Updated: ${formatted}`;
+}
+
 
 // =========================
 // Currency Formatting
@@ -346,7 +374,7 @@ function displayRecipes(results) {
 
         // Profit
         const profitCell = row.insertCell();
-        
+
         profitCell.innerHTML = formatCurrency(recipe.profit);
 
         if (recipe.profit > 0) {
@@ -388,7 +416,7 @@ function resetFilters() {
 regionFilter.addEventListener("change", loadMarketData);
 rulesetFilter.addEventListener("change", loadMarketData);
 factionFilter.addEventListener("change", loadMarketData);
-
+const lastUpdated = document.getElementById("last-updated");
 // =========================
 // Recipe Event Listeners
 // =========================

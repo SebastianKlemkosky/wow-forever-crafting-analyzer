@@ -1,7 +1,7 @@
 from recipes import Recipe
 from pathlib import Path
 import json
-
+from datetime import datetime, timezone
 
 def format_currency(copper: int) -> str:
     sign = "-" if copper < 0 else ""
@@ -38,7 +38,16 @@ def export_results(
 
     file_path.parent.mkdir(parents=True, exist_ok=True)
 
+    market_data = {
+        "region": region,
+        "ruleset": ruleset,
+        "faction": faction,
+        "last_updated": datetime.now(timezone.utc).isoformat(),
+        "recipes": export
+    }
+
+
     with file_path.open("w", encoding="utf-8") as file:
-        json.dump(export, file, indent=2)
+        json.dump(market_data, file, indent=2)
 
     print(f"Exported {len(export)} recipes to {file_path}")

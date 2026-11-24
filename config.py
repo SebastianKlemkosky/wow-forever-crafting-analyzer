@@ -57,3 +57,4 @@ PROFESSIONS = {
     "first_aid": 129,
     "poisons": 40,
 }
+
