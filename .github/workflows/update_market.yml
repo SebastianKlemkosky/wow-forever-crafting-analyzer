@@ -39,6 +39,67 @@ jobs:
       - name: Generate market data
         run: uv run main.py
 
+      - name: Validate market data
+        run: |
+          uv run python - <<'PY'
+          import json
+          from pathlib import Path
+          from datetime import datetime
+          from config import REGIONS, MARKETS
+
+          validated = 0
+
+          for region in REGIONS:
+              for ruleset in MARKETS:
+                  for faction in MARKETS[ruleset]:
+
+                      path = (
+                          Path("docs/markets")
+                          / region
+                          / ruleset
+                          / f"{faction}.json"
+                      )
+
+                      if not path.exists():
+                          raise RuntimeError(
+                              f"Missing market file: {path}"
+                          )
+
+                      data = json.loads(
+                          path.read_text(encoding="utf-8")
+                      )
+
+                      if not data.get("last_updated"):
+                          raise RuntimeError(
+                              f"Missing timestamp: {path}"
+                          )
+
+                      datetime.fromisoformat(data["last_updated"])
+
+                      if not isinstance(data.get("recipes"), list):
+                          raise RuntimeError(
+                              f"Invalid recipes: {path}"
+                          )
+
+                      if (
+                          data.get("region") != region
+                          or data.get("ruleset") != ruleset
+                          or data.get("faction") != faction
+                      ):
+                          raise RuntimeError(
+                              f"Invalid market metadata: {path}"
+                          )
+
+                      validated += 1
+
+                      print(
+                          f"Validated: {path} "
+                          f"({len(data['recipes'])} recipes)"
+                      )
+
+          print(f"\nSuccessfully validated {validated} markets.")
+          PY
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
