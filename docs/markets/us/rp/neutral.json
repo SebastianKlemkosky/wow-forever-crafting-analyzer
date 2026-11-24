@@ -1,492 +1,330 @@
-[
-  {
-    "recipe_id": 3928,
-    "name": "Mechanical Squirrel",
-    "profession": 202,
-    "required_skill": 75,
-    "profit": 26535
-  },
-  {
-    "recipe_id": 3947,
-    "name": "Crafted Solid Shot",
-    "profession": 202,
-    "required_skill": null,
-    "profit": 8751
-  },
-  {
-    "recipe_id": 10097,
-    "name": "Smelt Mithril",
-    "profession": 186,
-    "required_skill": null,
-    "profit": 6440
-  },
-  {
-    "recipe_id": 3813,
-    "name": "Small Silk Pack",
-    "profession": 197,
-    "required_skill": null,
-    "profit": 5895
-  },
-  {
-    "recipe_id": 2165,
-    "name": "Medium Armor Kit",
-    "profession": 165,
-    "required_skill": null,
-    "profit": 4540
-  },
-  {
-    "recipe_id": 1229432,
-    "name": "Camp Tent",
-    "profession": 165,
-    "required_skill": null,
-    "profit": 4390
-  },
-  {
-    "recipe_id": 3764,
-    "name": "Hillman's Leather Gloves",
-    "profession": 165,
-    "required_skill": null,
-    "profit": 3510
-  },
-  {
-    "recipe_id": 3760,
-    "name": "Hillman's Cloak",
-    "profession": 165,
-    "required_skill": null,
-    "profit": 3035
-  },
-  {
-    "recipe_id": 3958,
-    "name": "Iron Strut",
-    "profession": 202,
-    "required_skill": null,
-    "profit": 3002
-  },
-  {
-    "recipe_id": 9193,
-    "name": "Heavy Quiver",
-    "profession": 165,
-    "required_skill": null,
-    "profit": 2830
-  },
-  {
-    "recipe_id": 3307,
-    "name": "Smelt Iron",
-    "profession": 186,
-    "required_skill": null,
-    "profit": 2681
-  },
-  {
-    "recipe_id": 3771,
-    "name": "Barbaric Gloves",
-    "profession": 165,
-    "required_skill": 125,
-    "profit": 2565
-  },
-  {
-    "recipe_id": 9146,
-    "name": "Herbalist's Gloves",
-    "profession": 165,
-    "required_skill": 110,
-    "profit": 2434
-  },
-  {
-    "recipe_id": 3926,
-    "name": "Copper Modulator",
-    "profession": 202,
-    "required_skill": null,
-    "profit": 2289
-  },
-  {
-    "recipe_id": 2659,
-    "name": "Smelt Bronze",
-    "profession": 186,
-    "required_skill": null,
-    "profit": 1648
-  },
-  {
-    "recipe_id": 3308,
-    "name": "Smelt Gold",
-    "profession": 186,
-    "required_skill": null,
-    "profit": 500
-  },
-  {
-    "recipe_id": 7929,
-    "name": "Heavy Silk Bandage",
-    "profession": 129,
-    "required_skill": 180,
-    "profit": 350
-  },
-  {
-    "recipe_id": 3865,
-    "name": "Bolt of Mageweave",
-    "profession": 197,
-    "required_skill": null,
-    "profit": 300
-  },
-  {
-    "recipe_id": 2152,
-    "name": "Light Armor Kit",
-    "profession": 165,
-    "required_skill": null,
-    "profit": 260
-  },
-  {
-    "recipe_id": 7934,
-    "name": "Anti-Venom",
-    "profession": 129,
-    "required_skill": null,
-    "profit": 200
-  },
-  {
-    "recipe_id": 3839,
-    "name": "Bolt of Silk Cloth",
-    "profession": 197,
-    "required_skill": null,
-    "profit": 200
-  },
-  {
-    "recipe_id": 18238,
-    "name": "Spotted Yellowtail",
-    "profession": 185,
-    "required_skill": 225,
-    "profit": 190
-  },
-  {
-    "recipe_id": 9068,
-    "name": "Light Leather Pants",
-    "profession": 165,
-    "required_skill": null,
-    "profit": 155
-  },
-  {
-    "recipe_id": 3922,
-    "name": "Handful of Copper Bolts",
-    "profession": 202,
-    "required_skill": null,
-    "profit": 135
-  },
-  {
-    "recipe_id": 7928,
-    "name": "Silk Bandage",
-    "profession": 129,
-    "required_skill": null,
-    "profit": 125
-  },
-  {
-    "recipe_id": 2162,
-    "name": "Embossed Leather Cloak",
-    "profession": 165,
-    "required_skill": null,
-    "profit": 115
-  },
-  {
-    "recipe_id": 7753,
-    "name": "Longjaw Mud Snapper",
-    "profession": 185,
-    "required_skill": 50,
-    "profit": 108
-  },
-  {
-    "recipe_id": 7828,
-    "name": "Rockscale Cod",
-    "profession": 185,
-    "required_skill": 175,
-    "profit": 86
-  },
-  {
-    "recipe_id": 3275,
-    "name": "Linen Bandage",
-    "profession": 129,
-    "required_skill": null,
-    "profit": 52
-  },
-  {
-    "recipe_id": 7755,
-    "name": "Bristle Whisker Catfish",
-    "profession": 185,
-    "required_skill": 100,
-    "profit": 41
-  },
-  {
-    "recipe_id": 7751,
-    "name": "Brilliant Smallfish",
-    "profession": 185,
-    "required_skill": 1,
-    "profit": 10
-  },
-  {
-    "recipe_id": 2963,
-    "name": "Bolt of Linen Cloth",
-    "profession": 197,
-    "required_skill": null,
-    "profit": 4
-  },
-  {
-    "recipe_id": 3276,
-    "name": "Heavy Linen Bandage",
-    "profession": 129,
-    "required_skill": null,
-    "profit": 4
-  },
-  {
-    "recipe_id": 18241,
-    "name": "Filet of Redgill",
-    "profession": 185,
-    "required_skill": 225,
-    "profit": 0
-  },
-  {
-    "recipe_id": 18401,
-    "name": "Bolt of Runecloth",
-    "profession": 197,
-    "required_skill": null,
-    "profit": 0
-  },
-  {
-    "recipe_id": 10841,
-    "name": "Heavy Mageweave Bandage",
-    "profession": 129,
-    "required_skill": null,
-    "profit": -1
-  },
-  {
-    "recipe_id": 2660,
-    "name": "Rough Sharpening Stone",
-    "profession": 164,
-    "required_skill": null,
-    "profit": -13
-  },
-  {
-    "recipe_id": 3320,
-    "name": "Rough Grinding Stone",
-    "profession": 164,
-    "required_skill": null,
-    "profit": -26
-  },
-  {
-    "recipe_id": 3304,
-    "name": "Smelt Tin",
-    "profession": 186,
-    "required_skill": null,
-    "profit": -35
-  },
-  {
-    "recipe_id": 2881,
-    "name": "Light Leather",
-    "profession": 165,
-    "required_skill": null,
-    "profit": -35
-  },
-  {
-    "recipe_id": 9271,
-    "name": "Aquadynamic Fish Attractor",
-    "profession": 202,
-    "required_skill": null,
-    "profit": -73
-  },
-  {
-    "recipe_id": 20649,
-    "name": "Heavy Leather",
-    "profession": 165,
-    "required_skill": null,
-    "profit": -90
-  },
-  {
-    "recipe_id": 20648,
-    "name": "Medium Leather",
-    "profession": 165,
-    "required_skill": null,
-    "profit": -95
-  },
-  {
-    "recipe_id": 3756,
-    "name": "Embossed Leather Gloves",
-    "profession": 165,
-    "required_skill": null,
-    "profit": -120
-  },
-  {
-    "recipe_id": 2665,
-    "name": "Coarse Sharpening Stone",
-    "profession": 164,
-    "required_skill": null,
-    "profit": -149
-  },
-  {
-    "recipe_id": 3929,
-    "name": "Coarse Blasting Powder",
-    "profession": 202,
-    "required_skill": null,
-    "profit": -174
-  },
-  {
-    "recipe_id": 2661,
-    "name": "Copper Chain Belt",
-    "profession": 164,
-    "required_skill": null,
-    "profit": -190
-  },
-  {
-    "recipe_id": 2159,
-    "name": "Fine Leather Cloak",
-    "profession": 165,
-    "required_skill": null,
-    "profit": -190
-  },
-  {
-    "recipe_id": 3277,
-    "name": "Wool Bandage",
-    "profession": 129,
-    "required_skill": null,
-    "profit": -210
-  },
-  {
-    "recipe_id": 3780,
-    "name": "Heavy Armor Kit",
-    "profession": 165,
-    "required_skill": null,
-    "profit": -320
-  },
-  {
-    "recipe_id": 3945,
-    "name": "Heavy Blasting Powder",
-    "profession": 202,
-    "required_skill": null,
-    "profit": -400
-  },
-  {
-    "recipe_id": 2161,
-    "name": "Embossed Leather Boots",
-    "profession": 165,
-    "required_skill": null,
-    "profit": -420
-  },
-  {
-    "recipe_id": 9062,
-    "name": "Small Leather Ammo Pouch",
-    "profession": 165,
-    "required_skill": null,
-    "profit": -420
-  },
-  {
-    "recipe_id": 2964,
-    "name": "Bolt of Woolen Cloth",
-    "profession": 197,
-    "required_skill": null,
-    "profit": -430
-  },
-  {
-    "recipe_id": 9065,
-    "name": "Light Leather Bracers",
-    "profession": 165,
-    "required_skill": null,
-    "profit": -440
-  },
-  {
-    "recipe_id": 20650,
-    "name": "Thick Leather",
-    "profession": 165,
-    "required_skill": null,
-    "profit": -510
-  },
-  {
-    "recipe_id": 3278,
-    "name": "Heavy Wool Bandage",
-    "profession": 129,
-    "required_skill": null,
-    "profit": -520
-  },
-  {
-    "recipe_id": 3761,
-    "name": "Fine Leather Tunic",
-    "profession": 165,
-    "required_skill": null,
-    "profit": -540
-  },
-  {
-    "recipe_id": 6510,
-    "name": "Blinding Powder",
-    "profession": 40,
-    "required_skill": null,
-    "profit": -749
-  },
-  {
-    "recipe_id": 1229705,
-    "name": "Incense Candle",
-    "profession": 182,
-    "required_skill": null,
-    "profit": -855
-  },
-  {
-    "recipe_id": 3337,
-    "name": "Heavy Grinding Stone",
-    "profession": 164,
-    "required_skill": null,
-    "profit": -855
-  },
-  {
-    "recipe_id": 3323,
-    "name": "Runed Copper Gauntlets",
-    "profession": 164,
-    "required_skill": null,
-    "profit": -920
-  },
-  {
-    "recipe_id": 11479,
-    "name": "Transmute: Iron to Gold",
-    "profession": 171,
-    "required_skill": 225,
-    "profit": -999
-  },
-  {
-    "recipe_id": 3953,
-    "name": "Bronze Framework",
-    "profession": 202,
-    "required_skill": null,
-    "profit": -1273
-  },
-  {
-    "recipe_id": 22331,
-    "name": "Rugged Leather",
-    "profession": 165,
-    "required_skill": null,
-    "profit": -2415
-  },
-  {
-    "recipe_id": 2668,
-    "name": "Rough Bronze Leggings",
-    "profession": 164,
-    "required_skill": null,
-    "profit": -4794
-  },
-  {
-    "recipe_id": 1255096,
-    "name": "Mystic Heavy Armor Kit",
-    "profession": 165,
-    "required_skill": 135,
-    "profit": -5536
-  },
-  {
-    "recipe_id": 11480,
-    "name": "Transmute: Mithril to Truesilver",
-    "profession": 171,
-    "required_skill": 225,
-    "profit": -8100
-  },
-  {
-    "recipe_id": 12599,
-    "name": "Mithril Casing",
-    "profession": 202,
-    "required_skill": null,
-    "profit": -10000
-  },
-  {
-    "recipe_id": 9968,
-    "name": "Heavy Mithril Boots",
-    "profession": 164,
-    "required_skill": null,
-    "profit": -128600
-  }
-]
+{
+  "region": "us",
+  "ruleset": "rp",
+  "faction": "neutral",
+  "last_updated": "2026-11-24T15:38:45.784606+00:00",
+  "recipes": [
+    {
+      "recipe_id": 25146,
+      "name": "Transmute: Elemental Fire",
+      "profession": 171,
+      "required_skill": 300,
+      "profit": 9350
+    },
+    {
+      "recipe_id": 3947,
+      "name": "Crafted Solid Shot",
+      "profession": 202,
+      "required_skill": null,
+      "profit": 8751
+    },
+    {
+      "recipe_id": 10097,
+      "name": "Smelt Mithril",
+      "profession": 186,
+      "required_skill": null,
+      "profit": 6440
+    },
+    {
+      "recipe_id": 1229432,
+      "name": "Camp Tent",
+      "profession": 165,
+      "required_skill": null,
+      "profit": 4390
+    },
+    {
+      "recipe_id": 3958,
+      "name": "Iron Strut",
+      "profession": 202,
+      "required_skill": null,
+      "profit": 3002
+    },
+    {
+      "recipe_id": 3307,
+      "name": "Smelt Iron",
+      "profession": 186,
+      "required_skill": null,
+      "profit": 2681
+    },
+    {
+      "recipe_id": 3865,
+      "name": "Bolt of Mageweave",
+      "profession": 197,
+      "required_skill": null,
+      "profit": 650
+    },
+    {
+      "recipe_id": 2658,
+      "name": "Smelt Silver",
+      "profession": 186,
+      "required_skill": null,
+      "profit": 398
+    },
+    {
+      "recipe_id": 7929,
+      "name": "Heavy Silk Bandage",
+      "profession": 129,
+      "required_skill": 180,
+      "profit": 358
+    },
+    {
+      "recipe_id": 2152,
+      "name": "Light Armor Kit",
+      "profession": 165,
+      "required_skill": null,
+      "profit": 260
+    },
+    {
+      "recipe_id": 7928,
+      "name": "Silk Bandage",
+      "profession": 129,
+      "required_skill": null,
+      "profit": 229
+    },
+    {
+      "recipe_id": 3839,
+      "name": "Bolt of Silk Cloth",
+      "profession": 197,
+      "required_skill": null,
+      "profit": 216
+    },
+    {
+      "recipe_id": 7934,
+      "name": "Anti-Venom",
+      "profession": 129,
+      "required_skill": null,
+      "profit": 200
+    },
+    {
+      "recipe_id": 18238,
+      "name": "Spotted Yellowtail",
+      "profession": 185,
+      "required_skill": 225,
+      "profit": 190
+    },
+    {
+      "recipe_id": 10841,
+      "name": "Heavy Mageweave Bandage",
+      "profession": 129,
+      "required_skill": null,
+      "profit": 139
+    },
+    {
+      "recipe_id": 9271,
+      "name": "Aquadynamic Fish Attractor",
+      "profession": 202,
+      "required_skill": null,
+      "profit": 127
+    },
+    {
+      "recipe_id": 7751,
+      "name": "Brilliant Smallfish",
+      "profession": 185,
+      "required_skill": 1,
+      "profit": 114
+    },
+    {
+      "recipe_id": 7753,
+      "name": "Longjaw Mud Snapper",
+      "profession": 185,
+      "required_skill": 50,
+      "profit": 93
+    },
+    {
+      "recipe_id": 3275,
+      "name": "Linen Bandage",
+      "profession": 129,
+      "required_skill": null,
+      "profit": 52
+    },
+    {
+      "recipe_id": 7755,
+      "name": "Bristle Whisker Catfish",
+      "profession": 185,
+      "required_skill": 100,
+      "profit": 42
+    },
+    {
+      "recipe_id": 2963,
+      "name": "Bolt of Linen Cloth",
+      "profession": 197,
+      "required_skill": null,
+      "profit": 4
+    },
+    {
+      "recipe_id": 3276,
+      "name": "Heavy Linen Bandage",
+      "profession": 129,
+      "required_skill": null,
+      "profit": 4
+    },
+    {
+      "recipe_id": 18241,
+      "name": "Filet of Redgill",
+      "profession": 185,
+      "required_skill": 225,
+      "profit": 0
+    },
+    {
+      "recipe_id": 18401,
+      "name": "Bolt of Runecloth",
+      "profession": 197,
+      "required_skill": null,
+      "profit": 0
+    },
+    {
+      "recipe_id": 2660,
+      "name": "Rough Sharpening Stone",
+      "profession": 164,
+      "required_skill": null,
+      "profit": -12
+    },
+    {
+      "recipe_id": 3320,
+      "name": "Rough Grinding Stone",
+      "profession": 164,
+      "required_skill": null,
+      "profit": -24
+    },
+    {
+      "recipe_id": 2881,
+      "name": "Light Leather",
+      "profession": 165,
+      "required_skill": null,
+      "profit": -35
+    },
+    {
+      "recipe_id": 20648,
+      "name": "Medium Leather",
+      "profession": 165,
+      "required_skill": null,
+      "profit": -85
+    },
+    {
+      "recipe_id": 20649,
+      "name": "Heavy Leather",
+      "profession": 165,
+      "required_skill": null,
+      "profit": -140
+    },
+    {
+      "recipe_id": 3929,
+      "name": "Coarse Blasting Powder",
+      "profession": 202,
+      "required_skill": null,
+      "profit": -174
+    },
+    {
+      "recipe_id": 3277,
+      "name": "Wool Bandage",
+      "profession": 129,
+      "required_skill": null,
+      "profit": -200
+    },
+    {
+      "recipe_id": 3945,
+      "name": "Heavy Blasting Powder",
+      "profession": 202,
+      "required_skill": null,
+      "profit": -200
+    },
+    {
+      "recipe_id": 3337,
+      "name": "Heavy Grinding Stone",
+      "profession": 164,
+      "required_skill": null,
+      "profit": -255
+    },
+    {
+      "recipe_id": 1230117,
+      "name": "First Aid Kit",
+      "profession": 129,
+      "required_skill": null,
+      "profit": -300
+    },
+    {
+      "recipe_id": 2964,
+      "name": "Bolt of Woolen Cloth",
+      "profession": 197,
+      "required_skill": null,
+      "profit": -400
+    },
+    {
+      "recipe_id": 3278,
+      "name": "Heavy Wool Bandage",
+      "profession": 129,
+      "required_skill": null,
+      "profit": -500
+    },
+    {
+      "recipe_id": 20650,
+      "name": "Thick Leather",
+      "profession": 165,
+      "required_skill": null,
+      "profit": -510
+    },
+    {
+      "recipe_id": 1229705,
+      "name": "Incense Candle",
+      "profession": 182,
+      "required_skill": null,
+      "profit": -855
+    },
+    {
+      "recipe_id": 3953,
+      "name": "Bronze Framework",
+      "profession": 202,
+      "required_skill": null,
+      "profit": -1273
+    },
+    {
+      "recipe_id": 3569,
+      "name": "Smelt Steel",
+      "profession": 186,
+      "required_skill": null,
+      "profit": -1699
+    },
+    {
+      "recipe_id": 22331,
+      "name": "Rugged Leather",
+      "profession": 165,
+      "required_skill": null,
+      "profit": -2415
+    },
+    {
+      "recipe_id": 2668,
+      "name": "Rough Bronze Leggings",
+      "profession": 164,
+      "required_skill": null,
+      "profit": -4794
+    },
+    {
+      "recipe_id": 1255096,
+      "name": "Mystic Heavy Armor Kit",
+      "profession": 165,
+      "required_skill": 135,
+      "profit": -5536
+    },
+    {
+      "recipe_id": 2670,
+      "name": "Rough Bronze Cuirass",
+      "profession": 164,
+      "required_skill": null,
+      "profit": -5643
+    },
+    {
+      "recipe_id": 11480,
+      "name": "Transmute: Mithril to Truesilver",
+      "profession": 171,
+      "required_skill": 225,
+      "profit": -8100
+    },
+    {
+      "recipe_id": 12599,
+      "name": "Mithril Casing",
+      "profession": 202,
+      "required_skill": null,
+      "profit": -10000
+    }
+  ]
+}

@@ -46,3 +46,7 @@ desktop.ini
 
 # Downloaded API data
 data/raw/
+
+# Generated market data
+docs/markets/
+docs/market_results.json

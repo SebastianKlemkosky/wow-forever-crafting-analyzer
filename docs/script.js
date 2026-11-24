@@ -87,7 +87,7 @@ async function loadMarketData() {
         });
 
         if (!response.ok) {
-            throw new Error("Market data unavailable.");
+            throw new Error(`HTTP ${response.status}: ${path}`);
         }
 
         const data = await response.json();
@@ -123,7 +123,7 @@ async function loadMarketData() {
         console.error(error);
 
         errorMessage.textContent =
-            "Market data is unavailable for the selected market.";
+            `Market data unavailable: ${error.message}`;
 
         errorMessage.hidden = false;
         resultsCount.textContent = "Market unavailable.";
