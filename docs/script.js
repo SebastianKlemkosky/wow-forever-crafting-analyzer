@@ -29,7 +29,7 @@ const regionFilter = document.getElementById("region");
 const rulesetFilter = document.getElementById("ruleset");
 const factionFilter = document.getElementById("faction");
 const marketInfo = document.getElementById("market-info");
-
+const lastUpdated = document.getElementById("last-updated");
 // =========================
 // Recipe Filter Elements
 // =========================
@@ -97,7 +97,12 @@ async function loadMarketData() {
             return;
         }
 
-        recipes = data.recipes;
+        recipes = Array.isArray(data) ? data : data.recipes;
+
+        if (!Array.isArray(recipes)) {
+            throw new Error("Invalid market data format.");
+        }
+
         updateTimestamp(data.last_updated);
 
         updateSummary();
@@ -416,7 +421,6 @@ function resetFilters() {
 regionFilter.addEventListener("change", loadMarketData);
 rulesetFilter.addEventListener("change", loadMarketData);
 factionFilter.addEventListener("change", loadMarketData);
-const lastUpdated = document.getElementById("last-updated");
 // =========================
 // Recipe Event Listeners
 // =========================
