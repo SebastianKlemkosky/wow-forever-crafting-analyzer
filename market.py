@@ -51,7 +51,6 @@ class Market:
 
         return None
 
-
     def get_item_by_name(self, item_name: str) -> dict | None:
         if self.data is None:
             raise ValueError("Market data has not been loaded.")

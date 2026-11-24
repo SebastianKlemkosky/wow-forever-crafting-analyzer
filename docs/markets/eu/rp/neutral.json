@@ -1,0 +1,240 @@
+[
+  {
+    "recipe_id": 2675,
+    "name": "Shining Silver Breastplate",
+    "profession": 164,
+    "required_skill": null,
+    "profit": 31638
+  },
+  {
+    "recipe_id": 25146,
+    "name": "Transmute: Elemental Fire",
+    "profession": 171,
+    "required_skill": 300,
+    "profit": 14447
+  },
+  {
+    "recipe_id": 3930,
+    "name": "Crafted Heavy Shot",
+    "profession": 202,
+    "required_skill": null,
+    "profit": 3470
+  },
+  {
+    "recipe_id": 3308,
+    "name": "Smelt Gold",
+    "profession": 186,
+    "required_skill": null,
+    "profit": 3190
+  },
+  {
+    "recipe_id": 18238,
+    "name": "Spotted Yellowtail",
+    "profession": 185,
+    "required_skill": 225,
+    "profit": 2626
+  },
+  {
+    "recipe_id": 7929,
+    "name": "Heavy Silk Bandage",
+    "profession": 129,
+    "required_skill": 180,
+    "profit": 2224
+  },
+  {
+    "recipe_id": 3922,
+    "name": "Handful of Copper Bolts",
+    "profession": 202,
+    "required_skill": null,
+    "profit": 1945
+  },
+  {
+    "recipe_id": 3865,
+    "name": "Bolt of Mageweave",
+    "profession": 197,
+    "required_skill": null,
+    "profit": 1405
+  },
+  {
+    "recipe_id": 1252566,
+    "name": "Savory Whimsyfin Delight",
+    "profession": 185,
+    "required_skill": 85,
+    "profit": 899
+  },
+  {
+    "recipe_id": 10841,
+    "name": "Heavy Mageweave Bandage",
+    "profession": 129,
+    "required_skill": null,
+    "profit": 862
+  },
+  {
+    "recipe_id": 7755,
+    "name": "Bristle Whisker Catfish",
+    "profession": 185,
+    "required_skill": 100,
+    "profit": 565
+  },
+  {
+    "recipe_id": 9271,
+    "name": "Aquadynamic Fish Attractor",
+    "profession": 202,
+    "required_skill": null,
+    "profit": 530
+  },
+  {
+    "recipe_id": 2657,
+    "name": "Smelt Copper",
+    "profession": 186,
+    "required_skill": null,
+    "profit": 330
+  },
+  {
+    "recipe_id": 2165,
+    "name": "Medium Armor Kit",
+    "profession": 165,
+    "required_skill": null,
+    "profit": 280
+  },
+  {
+    "recipe_id": 3945,
+    "name": "Heavy Blasting Powder",
+    "profession": 202,
+    "required_skill": null,
+    "profit": 80
+  },
+  {
+    "recipe_id": 2963,
+    "name": "Bolt of Linen Cloth",
+    "profession": 197,
+    "required_skill": null,
+    "profit": 10
+  },
+  {
+    "recipe_id": 3304,
+    "name": "Smelt Tin",
+    "profession": 186,
+    "required_skill": null,
+    "profit": 0
+  },
+  {
+    "recipe_id": 2658,
+    "name": "Smelt Silver",
+    "profession": 186,
+    "required_skill": null,
+    "profit": -2
+  },
+  {
+    "recipe_id": 2881,
+    "name": "Light Leather",
+    "profession": 165,
+    "required_skill": null,
+    "profit": -56
+  },
+  {
+    "recipe_id": 3942,
+    "name": "Whirring Bronze Gizmo",
+    "profession": 202,
+    "required_skill": null,
+    "profit": -75
+  },
+  {
+    "recipe_id": 20649,
+    "name": "Heavy Leather",
+    "profession": 165,
+    "required_skill": null,
+    "profit": -160
+  },
+  {
+    "recipe_id": 8238,
+    "name": "Savory Deviate Delight",
+    "profession": 185,
+    "required_skill": 85,
+    "profit": -169
+  },
+  {
+    "recipe_id": 1229432,
+    "name": "Camp Tent",
+    "profession": 165,
+    "required_skill": null,
+    "profit": -270
+  },
+  {
+    "recipe_id": 20648,
+    "name": "Medium Leather",
+    "profession": 165,
+    "required_skill": null,
+    "profit": -271
+  },
+  {
+    "recipe_id": 3278,
+    "name": "Heavy Wool Bandage",
+    "profession": 129,
+    "required_skill": null,
+    "profit": -300
+  },
+  {
+    "recipe_id": 3756,
+    "name": "Embossed Leather Gloves",
+    "profession": 165,
+    "required_skill": null,
+    "profit": -382
+  },
+  {
+    "recipe_id": 3839,
+    "name": "Bolt of Silk Cloth",
+    "profession": 197,
+    "required_skill": null,
+    "profit": -562
+  },
+  {
+    "recipe_id": 20650,
+    "name": "Thick Leather",
+    "profession": 165,
+    "required_skill": null,
+    "profit": -700
+  },
+  {
+    "recipe_id": 2659,
+    "name": "Smelt Bronze",
+    "profession": 186,
+    "required_skill": null,
+    "profit": -730
+  },
+  {
+    "recipe_id": 3771,
+    "name": "Barbaric Gloves",
+    "profession": 165,
+    "required_skill": 125,
+    "profit": -1588
+  },
+  {
+    "recipe_id": 18401,
+    "name": "Bolt of Runecloth",
+    "profession": 197,
+    "required_skill": null,
+    "profit": -3000
+  },
+  {
+    "recipe_id": 2392,
+    "name": "Red Linen Shirt",
+    "profession": 197,
+    "required_skill": null,
+    "profit": -5200
+  },
+  {
+    "recipe_id": 22331,
+    "name": "Rugged Leather",
+    "profession": 165,
+    "required_skill": null,
+    "profit": -5540
+  },
+  {
+    "recipe_id": 3813,
+    "name": "Small Silk Pack",
+    "profession": 197,
+    "required_skill": null,
+    "profit": -27600
+  }
+]

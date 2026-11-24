@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WoW Forever Market Analyzer</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1>WoW Forever Market Analyzer</h1>
+        <p>Discover profitable crafting opportunities.</p>
+        <p class="market-info" id="market-info">
+            US | PvP | Horde
+        </p>
+    </header>
+
+    <main class="container">
+
+        <!-- Market Selection -->
+        <section class="market-selection">
+
+            <h2>Market Selection</h2>
+
+            <div class="market-selectors">
+
+                <div class="filter-group">
+                    <label for="region">Region</label>
+
+                    <select id="region">
+                        <option value="us" selected>US</option>
+                        <option value="eu">EU</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="ruleset">Realm Type</label>
+
+                    <select id="ruleset">
+                        <option value="pvp" selected>PvP</option>
+                        <option value="normal">Normal</option>
+                        <option value="hardcore">Hardcore</option>
+                        <option value="rp">RP</option>
+                        <option value="rp_pvp">RP-PvP</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="faction">Faction</label>
+
+                    <select id="faction">
+                        <option value="alliance">Alliance</option>
+                        <option value="horde" selected>Horde</option>
+                        <option value="neutral">Neutral</option>
+                    </select>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Market Summary -->
+        <section class="market-summary">
+
+            <div class="stat-card">
+                <h2>Analyzed Recipes</h2>
+                <span id="total-recipes">--</span>
+            </div>
+
+            <div class="stat-card">
+                <h2>Profitable Recipes</h2>
+                <span id="profitable-recipes">--</span>
+            </div>
+
+            <div class="stat-card">
+                <h2>Unprofitable Recipes</h2>
+                <span id="unprofitable-recipes">--</span>
+            </div>
+
+        </section>
+
+        <!-- Recipe Filters -->
+        <section class="filters">
+
+            <h2>Recipe Filters</h2>
+
+            <div class="filter-group">
+                <label for="profession">Profession</label>
+
+                <select id="profession">
+                    <option value="all">All Professions</option>
+                    <option value="171">Alchemy</option>
+                    <option value="164">Blacksmithing</option>
+                    <option value="185">Cooking</option>
+                    <option value="333">Enchanting</option>
+                    <option value="202">Engineering</option>
+                    <option value="129">First Aid</option>
+                    <option value="356">Fishing</option>
+                    <option value="182">Herbalism</option>
+                    <option value="165">Leatherworking</option>
+                    <option value="186">Mining</option>
+                    <option value="40">Poisons</option>
+                    <option value="393">Skinning</option>
+                    <option value="197">Tailoring</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="recipe-search">Search Recipes</label>
+
+                <input
+                    type="search"
+                    id="recipe-search"
+                    placeholder="Enter recipe name..."
+                >
+            </div>
+
+            <div class="filter-group">
+                <label for="skill-level">Maximum Skill Level</label>
+
+                <input
+                    type="number"
+                    id="skill-level"
+                    min="1"
+                    placeholder="Any skill level"
+                >
+            </div>
+
+            <div class="filter-group">
+                <label>
+                    <input
+                        type="checkbox"
+                        id="include-unknown"
+                        checked
+                    >
+                    Include unknown skill requirements
+                </label>
+            </div>
+
+            <div class="filter-group">
+                <label for="sort-order">Sort By</label>
+
+                <select id="sort-order">
+                    <option value="profit-desc">Highest Profit</option>
+                    <option value="profit-asc">Lowest Profit</option>
+                    <option value="name-asc">Name (A-Z)</option>
+                    <option value="name-desc">Name (Z-A)</option>
+                    <option value="skill-asc">Lowest Skill Level</option>
+                    <option value="skill-desc">Highest Skill Level</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>
+                    <input type="checkbox" id="profitable-only">
+                    Show profitable recipes only
+                </label>
+            </div>
+
+            <button type="button" id="reset-filters">
+                Reset Filters
+            </button>
+
+        </section>
+
+        <!-- Recipe Results -->
+        <section class="recipe-results">
+
+            <div class="results-header">
+                <h2>Crafting Profitability</h2>
+
+                <p id="results-count" aria-live="polite">
+                    Loading recipes...
+                </p>
+            </div>
+
+            <div id="error-message" role="alert" hidden>
+                Unable to load market data.
+            </div>
+
+            <div class="table-container">
+
+                <table id="recipe-table">
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Recipe</th>
+                            <th scope="col">Profession</th>
+                            <th scope="col">Required Skill</th>
+                            <th scope="col">Profit per Craft</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="recipe-table-body">
+                        <!-- JavaScript will populate recipe results -->
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <p class="disclaimer">
+                Estimated profits are calculated using Auction House
+                prices and do not include Auction House fees.
+                Actual profits may vary.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>WoW Forever Market Analyzer</p>
+        <p>An unofficial community project.</p>
+    </footer>
+
+</body>
+</html>

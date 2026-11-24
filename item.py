@@ -1,6 +1,4 @@
-
 from market import Market
-
 
 class Item:
     def __init__(self, item_id: int, name: str) -> None:

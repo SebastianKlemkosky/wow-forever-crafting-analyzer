@@ -3,8 +3,6 @@ import requests
 import json
 from pathlib import Path
 
-
-
 class Recipe:
     def __init__(self, data: dict) -> None:
         self.data = data
@@ -224,3 +222,10 @@ class RecipeCatalog:
                 return recipe
 
         return None
+    
+    def get_recipes_by_profession(self, profession: int) -> list[Recipe]:
+        results: list[Recipe] = []
+        for recipe in self.recipes:
+            if recipe.profession == profession:
+                results.append(recipe)
+        return results
