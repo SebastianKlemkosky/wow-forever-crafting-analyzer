@@ -1,3 +1,8 @@
+## Live Website
+
+[WoW Forever Market Analyzer](https://sebastianklemkosky.github.io/wow-forever-market-analyzer/)
+
+
 # WoW Forever Market Analyzer
 
 A web-based Auction House and crafting profitability analyzer for World of Warcraft Forever, built with Python and JavaScript.
