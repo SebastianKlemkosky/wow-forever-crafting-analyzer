@@ -5755,7 +5755,7 @@
     "id": 6499,
     "slug": "boiled-clams",
     "profession": 185,
-    "category": 2640,
+    "category": 2632,
     "product": {
       "item": 5525,
       "count": 1
@@ -5788,7 +5788,7 @@
     "id": 6501,
     "slug": "clam-chowder",
     "profession": 185,
-    "category": 2640,
+    "category": 2632,
     "product": {
       "item": 5526,
       "count": 1
@@ -10670,7 +10670,7 @@
     "id": 1250158,
     "slug": "clam-linguine",
     "profession": 185,
-    "category": 2640,
+    "category": 2632,
     "product": {
       "item": 250081,
       "count": 1
@@ -37204,7 +37204,7 @@
     "id": 7213,
     "slug": "giant-clam-scorcho",
     "profession": 185,
-    "category": 2640,
+    "category": 2632,
     "product": {
       "item": 6038,
       "count": 1
@@ -48412,42 +48412,6 @@
     "url": "https://warcraftforever.com/spells/1292986/handguards-of-glory"
   },
   {
-    "id": 1294289,
-    "slug": "centaur-hoofwarmers",
-    "profession": 165,
-    "category": 2560,
-    "product": {
-      "item": 274490,
-      "count": 1
-    },
-    "reagents": [
-      [
-        4304,
-        12
-      ],
-      [
-        8343,
-        2
-      ]
-    ],
-    "skill": {
-      "yellow": 170,
-      "grey": 180,
-      "learn": 165
-    },
-    "acquire": 0,
-    "taughtBy": [
-      274491
-    ],
-    "castMs": 60000,
-    "name": "Centaur Hoofwarmers",
-    "nameLocale": "enUS",
-    "icon": "inv_boots_05",
-    "description": null,
-    "iconUrl": "https://warcraftforever.com/assets/icons/v1/inv_boots_05.jpg",
-    "url": "https://warcraftforever.com/spells/1294289/centaur-hoofwarmers"
-  },
-  {
     "id": 1297136,
     "slug": "broodwatchers-belt",
     "profession": 165,
@@ -49680,7 +49644,7 @@
     "id": 6500,
     "slug": "goblin-deviled-clams",
     "profession": 185,
-    "category": 2640,
+    "category": 2632,
     "product": {
       "item": 5527,
       "count": 1
@@ -63756,7 +63720,7 @@
     "id": 20626,
     "slug": "undermine-clam-chowder",
     "profession": 185,
-    "category": 2640,
+    "category": 2632,
     "product": {
       "item": 16766,
       "count": 2

@@ -58,3 +58,8 @@ PROFESSIONS = {
     "poisons": 40,
 }
 
+AUCTION_HOUSE_FEES: dict[str, int] = {
+    "alliance": 5,
+    "horde": 5,
+    "neutral": 15
+}

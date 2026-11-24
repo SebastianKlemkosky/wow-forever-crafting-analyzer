@@ -463,6 +463,10 @@ function createAcquisitionsTable(recipe) {
 // Recipe Details
 // =========================
 
+// =========================
+// Recipe Details
+// =========================
+
 function createRecipeDetails(recipe) {
 
     const container = document.createElement("div");
@@ -502,7 +506,21 @@ function createRecipeDetails(recipe) {
         </div>
 
         <div>
-            <span>Profit per Craft</span>
+            <span>Gross Profit</span>
+            <strong>
+                ${formatCurrency(recipe.gross_profit, true)}
+            </strong>
+        </div>
+
+        <div>
+            <span>Auction House Fee (${recipe.fee_percentage ?? "Unknown"}%)</span>
+            <strong>
+                ${formatCurrency(recipe.auction_house_fee)}
+            </strong>
+        </div>
+
+        <div>
+            <span>Net Profit per Craft</span>
             <strong>
                 ${formatCurrency(recipe.profit, true)}
             </strong>

@@ -149,8 +149,8 @@
                 <label for="sort-order">Sort By</label>
 
                 <select id="sort-order">
-                    <option value="profit-desc">Highest Profit</option>
-                    <option value="profit-asc">Lowest Profit</option>
+                    <option value="profit-desc">Highest Net Profit</option>
+                    <option value="profit-asc">Lowest Net Profit</option>
                     <option value="name-asc">Name (A-Z)</option>
                     <option value="name-desc">Name (Z-A)</option>
                     <option value="skill-asc">Lowest Skill Level</option>
@@ -195,7 +195,7 @@
                             <th scope="col">Recipe</th>
                             <th scope="col">Profession</th>
                             <th scope="col">Required Skill</th>
-                            <th scope="col">Profit per Craft</th>
+                            <th scope="col">Net Profit per Craft</th>
                         </tr>
                     </thead>
 
@@ -207,18 +207,21 @@
 
             </div>
 
-            <p class="disclaimer">
-                Estimated profits are calculated using Auction House
-                prices and do not include Auction House fees.
-                Actual profits may vary.
-            </p>
+        <p class="disclaimer">
+            Estimated profits are calculated using Auction House prices
+            and include a 5% sale fee for Alliance and Horde markets
+            or a 15% sale fee for Neutral markets.
+            Lost auction deposits are not included.
+            Actual profits may vary based on market demand,
+            item availability, and price fluctuations.
+        </p>
 
         </section>
 
     </main>
-
+    
     <footer class="site-footer">
-        <p>WoW Forever Market Analyzer</p>
+        <p>WoW Forever Crafting Market Analyzer</p>
         <p>An unofficial community project.</p>
     </footer>
 

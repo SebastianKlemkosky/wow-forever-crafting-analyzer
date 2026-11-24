@@ -13,6 +13,7 @@ class RecipeAnalysis:
     product_unit_price: int
     materials: list[MaterialCost]
     acquisitions: list[RecipeAcquisition]
+    fee_percentage: int
 
     @property
     def material_cost(self) -> int:
@@ -26,8 +27,20 @@ class RecipeAnalysis:
         return self.recipe.product_count * self.product_unit_price
 
     @property
-    def profit(self) -> int:
+    def auction_house_fee(self) -> int:
+        return (self.product_value * self.fee_percentage) // 100
+
+    @property
+    def net_revenue(self) -> int:
+        return self.product_value - self.auction_house_fee
+
+    @property
+    def gross_profit(self) -> int:
         return self.product_value - self.material_cost
+
+    @property
+    def profit(self) -> int:
+        return self.net_revenue - self.material_cost
 
     @property
     def roi(self) -> float | None:

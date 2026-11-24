@@ -93,7 +93,8 @@ class Analyzer:
             product=product,
             product_unit_price=product_price,
             materials=materials,
-            acquisitions=acquisitions
+            acquisitions=acquisitions,
+            fee_percentage=self.market.fee_percentage
         )
 
     def analyze_recipes(

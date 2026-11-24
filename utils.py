@@ -82,7 +82,12 @@ def export_results(
             "acquisitions": acquisitions,
             "acquisition_cost": analysis.acquisition_cost,
             "break_even_crafts": analysis.break_even_crafts,
+
             "material_cost": analysis.material_cost,
+            "fee_percentage": analysis.fee_percentage,
+            "auction_house_fee": analysis.auction_house_fee,
+            "net_revenue": analysis.net_revenue,
+            "gross_profit": analysis.gross_profit,
             "profit": analysis.profit,
             "roi": analysis.roi
         })

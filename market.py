@@ -1,5 +1,11 @@
 import requests
-from config import AH_BASE_URL, API_TIMEOUT, MARKETS, REGIONS
+from config import (
+    AH_BASE_URL,
+    API_TIMEOUT,
+    MARKETS,
+    REGIONS,
+    AUCTION_HOUSE_FEES
+)
 
 class Market:
     def __init__(self, region: str, ruleset: str, faction: str,) -> None:
@@ -19,6 +25,10 @@ class Market:
     @property
     def market_name(self) -> str:
         return f"{self.region.upper()} {self.ruleset.upper()} {self.faction.capitalize()}"
+
+    @property
+    def fee_percentage(self) -> int:
+        return AUCTION_HOUSE_FEES[self.faction]
 
     def fetch_data(self) -> None:
         url: str = f"{AH_BASE_URL}/m/{self.market_key}"
