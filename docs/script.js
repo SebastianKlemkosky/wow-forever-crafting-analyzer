@@ -357,9 +357,32 @@ function displayRecipes(results) {
 
         const row = tableBody.insertRow();
 
-        // Recipe Name
+
+        // Recipe Name and Icon
         const nameCell = row.insertCell();
-        nameCell.textContent = recipe.name;
+
+        const recipeContainer = document.createElement("div");
+        recipeContainer.className = "recipe-name";
+
+        if (recipe.icon_url) {
+            const icon = document.createElement("img");
+            icon.src = recipe.icon_url;
+            icon.alt = "";
+            icon.className = "recipe-icon";
+            icon.loading = "lazy";
+
+            icon.addEventListener("error", () => {
+                icon.remove();
+            });
+
+            recipeContainer.appendChild(icon);
+        }
+
+        const name = document.createElement("span");
+        name.textContent = recipe.name;
+
+        recipeContainer.appendChild(name);
+        nameCell.appendChild(recipeContainer);
 
         // Profession
         const professionCell = row.insertCell();

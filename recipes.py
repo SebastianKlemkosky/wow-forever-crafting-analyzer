@@ -71,8 +71,8 @@ class Recipe:
         return self.data.get("taughtBy", [])
 
     @property
-    def icon_url(self) -> str:
-        return self.data["iconUrl"]
+    def icon_url(self) -> str | None:
+        return self.data.get("iconUrl")
 
     @property
     def url(self) -> str:

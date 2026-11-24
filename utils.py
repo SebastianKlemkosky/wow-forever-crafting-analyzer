@@ -31,6 +31,7 @@ def export_results(
             "name": recipe.name,
             "profession": recipe.profession,
             "required_skill": recipe.required_skill,
+            "icon_url": recipe.icon_url,
             "profit": profit
         })
 
